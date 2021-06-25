@@ -1,8 +1,8 @@
 int	ft_atoi(const char *str)
 {
-	long			y;
-	long			z;
-	unsigned int	x;
+	int		y;
+	int		z;
+	int		x;
 
 	x = 0;
 	y = 1;
@@ -19,5 +19,5 @@ int	ft_atoi(const char *str)
 	}
 	while (str[x] >= '0' && str[x] <= '9')
 		z = z * 10 + str[x++] - '0';
-	return ((int)(z * y));
+	return (z * y);
 }
